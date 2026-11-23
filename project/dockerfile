@@ -1,0 +1,9 @@
+FROM python:3.11-slim
+
+ENV PYTHONUNBUFFERED=1
+
+RUN mkdir -p /home/app
+
+COPY app.py .
+
+CMD [ "python","app.py" ]
